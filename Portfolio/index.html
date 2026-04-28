@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBeck | Portfolio</title>
+    <meta name="description" content="The official portfolio of Max Beck, a web developer specializing in custom websites for small businesses, artists, and restaurants.">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* --- Styles aligned with Assignment 3 CSS Variables --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #F9FAFB; /* text-gray-50 */
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hover effect for portfolio cards */
+        .portfolio-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white">WebBeck</a>
+            <div class="flex items-center space-x-8">
+                <!-- Simplified navigation: Back to home -->
+                <a href="../index.html" class="text-gray-300 hover:text-violet-400 transition font-semibold flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white">My Portfolio</h1>
+            <p class="text-gray-400 mt-2 max-w-2xl mx-auto">A collection of my work. Feel free to explore the projects I've brought to life.</p>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio Item 1 -->
+            <div class="glass-effect rounded-lg overflow-hidden group text-left portfolio-card">
+                <iframe src="https://webbeck.org/" class="w-full h-60 border-0" title="Live preview of XYCharts" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">
+                        <a href="https://webbeck.org/" target="_blank" rel="noopener noreferrer" class="hover:underline">WebBeck</a>
+                    </h3>
+                    <p class="text-gray-400 mt-2">My main website! For more click on here!</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 2 -->
+            <div class="glass-effect rounded-lg overflow-hidden group text-left portfolio-card">
+                <iframe src="https://webbeck.org/preview/famkihz/" class="w-full h-60 border-0" title="Live preview of Famkihz Portfolio" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="p-6">
+                   <h3 class="text-xl font-bold text-white">
+                        <a href="https://webbeck.org/preview/famkihz/" target="_blank" rel="noopener noreferrer" class="hover:underline">Famkihz Portfolio</a>
+                    </h3>
+                    <p class="text-gray-400 mt-2">A single-page hub for the content creator Famkihz, consolidating social media, videos, and merchandise to reflect his "Fun, Outgoing, and Bold" brand.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 3 -->
+            <div class="glass-effect rounded-lg overflow-hidden group text-left portfolio-card">
+                <iframe src="https://webbeck.org/preview/RoyalLionEsports/" class="w-full h-60 border-0" title="Live preview of Royal Lion Esports" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white">
+                        <a href="https://webbeck.org/preview/RoyalLionEsports/" target="_blank" rel="noopener noreferrer" class="hover:underline">Royal Lion Esports</a>
+                    </h3>
+                    <p class="text-gray-400 mt-2">The official site for Royal Lion Esports, featuring a bold, responsive design with news, merchandise, and social links for the esports organization.</p>
+                </div>
+            </div>
+            
+            <!-- Project 4: New Placeholder -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <div class="max-w-xl mx-auto glass-effect rounded-xl p-8">
+                 <h2 class="text-2xl font-bold text-white mb-2">Ready to Start Your Project?</h2>
+                 <p class="text-gray-400 mb-6">Get in touch to discuss your ideas, no matter how big or small.</p>
+                 <p class="text-gray-300">The best way to reach me is by email:<br>
+                    <a href="mailto:max.beck@webbeck.org" class="text-violet-400 font-semibold hover:underline">max.beck@webbeck.org</a>
+                 </p>
+                 <p class="mt-6 text-sm text-gray-500">You can return to the <a href="../index.html" class="text-violet-500 hover:underline">main page</a> for more information about my process and pricing.</p>
+            </div>
+            <p id="copyright-year" class="mt-8 text-sm text-gray-500">&copy; 2026 WebBeck.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Auto-update copyright year ---
+        const copyrightElement = document.getElementById('copyright-year');
+        if (copyrightElement) {
+            const currentYear = new Date().getFullYear();
+            copyrightElement.innerHTML = `<a href="#" class="text-gray-500 hover:text-violet-400 transition-colors">&copy;</a> ${currentYear} WebBeck.`;
+        }
+    </script>
+</body>
+</html>

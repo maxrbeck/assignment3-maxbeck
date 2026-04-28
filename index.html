@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBeck | Custom Web Development Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Custom web development services by Max Beck. Partnering with small businesses, artists, and restaurants.">
+    
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased transition-colors duration-500">
+
+    <!-- Header / Sticky Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold logo-text">WebBeck</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="Portfolio/index.html" class="nav-link">Portfolio</a> <!-- Link to 2nd Page -->
+                <a href="#contact" class="nav-link">Contact</a>
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full border border-gray-600 hover:bg-violet-600 transition">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/95 backdrop-blur-sm text-center py-4">
+            <a href="#services" class="block py-3 text-white">Services</a>
+            <a href="#faq" class="block py-3 text-white">FAQ</a>
+            <a href="services.html" class="block py-3 text-white">Full Menu</a>
+            <a href="#contact" class="block py-3 text-white">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+            <div class="absolute inset-0 animated-gradient z-0"></div>
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="container mx-auto px-6 text-center relative z-20">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6">
+                    Custom Web Solutions.
+                </h1>
+                <p class="text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+                    Partnering with local businesses and creators to build high-performance digital experiences.
+                </p>
+                <p class="text-4xl text-gray-200 max-w-2xl mx-auto mb-10">
+                    Assignment 3
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-lg transition">Start Today</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-12">Core Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass-effect p-8 rounded-xl border-t-4 border-violet-500">
+                        <h3 class="text-xl font-bold mb-4">Static Sites</h3>
+                        <p class="opacity-80">Fast, clean code for portfolios and landing pages.</p>
+                    </div>
+                    <div class="glass-effect p-8 rounded-xl border-t-4 border-violet-500">
+                        <h3 class="text-xl font-bold mb-4">Dynamic Apps</h3>
+                        <p class="opacity-80">Interactive features powered by modern JavaScript.</p>
+                    </div>
+                    <div class="glass-effect p-8 rounded-xl border-t-4 border-violet-500">
+                        <h3 class="text-xl font-bold mb-4">Maintenance</h3>
+                        <p class="opacity-80">Keeping your site updated, secure, and fast.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (New Interactive Feature) -->
+        <section id="faq" class="py-20 bg-section-alt">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Common Questions</h2>
+                
+                <div class="faq-item mb-4">
+                    <button class="faq-question w-full text-left p-6 glass-effect flex justify-between items-center rounded-lg">
+                        <span>How long does a typical project take?</span>
+                        <span class="plus-minus">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 bg-gray-800/30 rounded-b-lg">
+                        <p>Most basic websites take 1-2 weeks, while more complex apps can take 4-6 weeks depending on requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item mb-4">
+                    <button class="faq-question w-full text-left p-6 glass-effect flex justify-between items-center rounded-lg">
+                        <span>Do you offer hosting services?</span>
+                        <span class="plus-minus">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 bg-gray-800/30 rounded-b-lg">
+                        <p>I help you set up hosting and domain names so you have full ownership of your digital assets.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item mb-4">
+                    <button class="faq-question w-full text-left p-6 glass-effect flex justify-between items-center rounded-lg">
+                        <span>Can we update the site ourselves?</span>
+                        <span class="plus-minus">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 bg-gray-800/30 rounded-b-lg">
+                        <p>Yes! I can build in easy-to-use CMS features or provide you with the documentation to manage content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-section">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <div class="glass-effect p-10 rounded-2xl shadow-2xl">
+                    <h2 class="text-3xl font-bold text-center mb-8">Get a Free Quote</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 text-white" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 text-white" placeholder="email@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 text-white" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="w-full bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 rounded-lg transition">Send Message</button>
+                        <p id="form-error" class="text-red-400 text-sm mt-2 hidden text-center"></p>
+                        <p id="form-success" class="text-green-400 text-sm mt-2 hidden text-center">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 border-t border-gray-800 text-center opacity-60">
+        <p id="copyright-year">&copy; 2026 WebBeck. Built by Max Beck.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
